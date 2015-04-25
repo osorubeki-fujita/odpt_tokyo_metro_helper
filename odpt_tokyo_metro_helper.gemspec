@@ -30,6 +30,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
 
+  spec.add_development_dependency "capistrano"
+  spec.add_development_dependency "deployer", ">= 0.2.0"
+
   spec.add_runtime_dependency "activesupport" , ">= 4.2.1"
-  spec.add_runtime_dependency "odpt_common" , ">= 0.1.6"
+  spec.add_runtime_dependency "odpt_common" , ">= 0.1.7"
 end

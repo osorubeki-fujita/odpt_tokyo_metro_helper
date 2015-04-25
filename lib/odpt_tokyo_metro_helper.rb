@@ -1,5 +1,8 @@
 require "odpt_tokyo_metro_helper/version"
 
+require "active_support"
+require "active_support/concern"
+
 require "odpt_tokyo_metro_helper/string_ext"
 require "odpt_tokyo_metro_helper/regexp_library"
 
