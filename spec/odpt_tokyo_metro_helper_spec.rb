@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
 require 'spec_helper'
-require 'deployer'
+require 'deplo'
 
 spec_filename = ::File.expand_path( ::File.dirname( __FILE__ ) )
-version = "0.1.8"
+version = "0.1.10"
 
 describe OdptTokyoMetroHelper do
   it "has a version number \'#{ version }\'" do
     expect( ::OdptTokyoMetroHelper::VERSION ).to eq( version )
-    expect( ::Deployer.version_check( ::OdptTokyoMetroHelper::VERSION , spec_filename ) ).to eq( true )
+    expect( ::Deplo.version_check( ::OdptTokyoMetroHelper::VERSION , spec_filename ) ).to eq( true )
   end
 
   it "has a method \#process_specific_letter" do
