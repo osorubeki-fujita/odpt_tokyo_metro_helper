@@ -34,5 +34,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "deplo", ">= 0.1.2"
 
   spec.add_runtime_dependency "activesupport" , ">= 4.2.1"
-  spec.add_runtime_dependency "odpt_common" , ">= 0.1.10"
+  spec.add_runtime_dependency "odpt_common" , ">= 0.1.11"
 end
