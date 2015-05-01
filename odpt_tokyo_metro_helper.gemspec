@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["osorubeki.fujita@gmail.com"]
 
   spec.summary       = "This gem provides helpful modules for Rails Application of Tokyo Metro Open Data."
-  spec.description   = "This gem provides helpful modules for Rails Application of Tokyo Metro Open Data. [Please note] : This gem is a temporary version."
+  spec.description   = "This gem provides helpful modules for Rails Application of Tokyo Metro Open Data. [Please note] This gem is a temporary version."
   spec.homepage      = "https://github.com/osorubeki-fujita/odpt_tokyo_metro_helper"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version = ">= 2.2.2"
+
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
@@ -34,5 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "deplo", ">= 0.1.4"
 
   spec.add_runtime_dependency "activesupport" , ">= 4.2.1"
-  spec.add_runtime_dependency "odpt_common" , ">= 0.1.13"
+  spec.add_runtime_dependency "odpt_common" , ">= 0.1.15"
 end
