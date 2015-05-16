@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
-
 require 'spec_helper'
 require 'deplo'
 
 spec_filename = ::File.expand_path( ::File.dirname( __FILE__ ) )
-version = "0.1.16"
+version = "0.1.18"
 
 describe OdptTokyoMetroHelper do
   it "has a version number \'#{ version }\'" do
